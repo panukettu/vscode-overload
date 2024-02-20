@@ -6,6 +6,8 @@
 
 ### configuration required
 
+* Use whatever font, ![Roboto Mono](https://github.com/lemeb/a-better-ligaturizer/blob/master/output-fonts/RobotoMono.ttf) is default.
+
 * CMD + SHIFT + P -> Enable APC extension after adding the APC configuration
 
 _settings.json_
@@ -46,12 +48,12 @@ _settings.json_
         ".monaco-breadcrumb-item:has([class*='-file']) .codicon:last-child:before": "content: ' ';"
       },
       "apc.header": {
-        "default": 44,
-        "fontSize": 12
+        "default": 48,
+        "fontSize": 12.5
       },
       "apc.listRow": {
-        "height": 28.5,
-        "fontSize": 12.25,
+        "height": 26,
+        "fontSize": 12.1,
         "lists": [
           "customview-tree",
           "results",
@@ -81,7 +83,7 @@ _settings.json_
         "extension-editor": "Roboto Mono",
         "monaco-menu": "Roboto Mono"
       },
-      "window.zoomLevel": -1.6,
+      "window.zoomLevel": -1.65,
       "workbench.tree.indent": 28,
       "workbench.fontAliasing": "default",
       "scm.inputFontFamily": "Roboto Mono",
@@ -100,6 +102,7 @@ _settings.json_
       "editor.stickyScroll.enabled": true,
       "editor.showFoldingControls": "always",
       "diffEditor.renderIndicators": true,
+      "window.density.editorTabHeight": "default",
       "breadcrumbs.icons": true
     }
 }
