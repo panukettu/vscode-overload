@@ -6,8 +6,9 @@
 
 ### configuration required
 
-_settings.json_
+* CMD + SHIFT + P -> Enable APC extension after adding the APC configuration
 
+_settings.json_
 ```json
 {
   "apc.stylesheet": {
