@@ -6,7 +6,7 @@
 
 ### configuration required
 
-* Use whatever font, ![Roboto Mono](https://github.com/lemeb/a-better-ligaturizer/blob/master/output-fonts/RobotoMono.ttf) is default.
+* Use whatever font, ![Roboto Mono](https://github.com/lemeb/a-better-ligaturizer/tree/master/output-fonts) is default.
 
 * CMD + SHIFT + P -> Enable APC extension after adding the APC configuration
 
@@ -85,6 +85,11 @@ _settings.json_
       },
       "window.zoomLevel": -1.65,
       "workbench.tree.indent": 28,
+      "editor.lineHeight": 1.85,
+      "editor.fontWeight": "400",
+      "editor.fontLigatures": true,   
+      "editor.letterSpacing": 1,
+      "editor.fontSize": 12.4,    
       "workbench.fontAliasing": "default",
       "scm.inputFontFamily": "Roboto Mono",
       "editor.fontFamily": "Roboto Mono, Jetbrains Mono, 'Input Mono', Verdana",

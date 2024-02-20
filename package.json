@@ -2,7 +2,7 @@
   "name": "overload",
   "displayName": "overload",
   "description": "A vibrant theme, works best with Solidity / TypeScript.",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "publisher": "0xp",
   "engines": {
     "vscode": "^1.80.0"
@@ -104,8 +104,9 @@
       "workbench.tree.renderIndentGuides": "none",
       "scm.inputFontFamily": "Roboto Mono",
       "editor.fontWeight": "400",
-      "editor.lineHeight": 1.9,
-      "editor.fontSize": 12,
+      "editor.letterSpacing": 1,
+      "editor.lineHeight": 1.85,
+      "editor.fontSize": 12.4,
       "editor.suggestFontSize": 11,
       "editor.codeLensFontSize": 10,
       "editor.fontLigatures": true,
