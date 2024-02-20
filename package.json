@@ -2,7 +2,7 @@
   "name": "overload",
   "displayName": "overload",
   "description": "A vibrant theme, works best with Solidity / TypeScript.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "0xp",
   "engines": {
     "vscode": "^1.86.0"
@@ -12,7 +12,7 @@
     "Themes"
   ],
   "galleryBanner": {
-    "color": "#5FFF94",
+    "color": "#0a0c10",
     "theme": "dark"
   },
   "contributes": {
