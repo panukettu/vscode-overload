@@ -11,6 +11,26 @@
 _settings.json_
 ```json
 {
+  "editor.tokenColorCustomizations": {
+		"[*]": {
+			"textMateRules": [
+				{
+					"scope": ["variable"],
+					"settings": {
+						"foreground": "none",
+						"fontStyle": "none"
+					}
+				},
+				{
+					"scope": ["entity.name.function"],
+					"settings": {
+						"foreground": "none",
+						"fontStyle": "none"
+					}
+				}
+			]
+		}
+  },
   "apc.stylesheet": {
         ".monaco-scrollable-element.modified-in-monaco-diff-editor.vs": "display: none;",
         ".monaco-editor .insert-sign": "color: #81ff89; opacity: 1 !important; font-weight: 700; margin-left: 3px;",

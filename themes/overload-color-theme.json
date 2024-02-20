@@ -280,6 +280,26 @@
 		"variable.readonly": {},
 		"variable.declaration.readonly": {}
 	},
+	"tokenColorCustomization": {
+		"[*]": {
+			"textMateRules": [
+				{
+					"scope": ["variable"],
+					"settings": {
+						"foreground": "none",
+						"fontStyle": "none"
+					}
+				},
+				{
+					"scope": ["entity.name.function"],
+					"settings": {
+						"foreground": "none",
+						"fontStyle": "none"
+					}
+				}
+			]
+		}
+	},
 	"tokenColors": [
 		{
 			"scope": ["comment"],

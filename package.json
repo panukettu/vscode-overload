@@ -2,7 +2,7 @@
   "name": "overload",
   "displayName": "overload",
   "description": "A vibrant theme, works best with Solidity / TypeScript.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "publisher": "0xp",
   "engines": {
     "vscode": "^1.80.0"
@@ -24,6 +24,30 @@
       }
     ],
     "configurationDefaults": {
+      "editor.tokenColorCustomizations": {
+        "[*]": {
+          "textMateRules": [
+            {
+              "scope": [
+                "variable"
+              ],
+              "settings": {
+                "foreground": "none",
+                "fontStyle": "none"
+              }
+            },
+            {
+              "scope": [
+                "entity.name.function"
+              ],
+              "settings": {
+                "foreground": "none",
+                "fontStyle": "none"
+              }
+            }
+          ]
+        }
+      },
       "apc.stylesheet": {
         ".monaco-scrollable-element.modified-in-monaco-diff-editor.vs": "display: none;",
         ".monaco-editor .insert-sign": "color: #81ff89; opacity: 1 !important; font-weight: 700; margin-left: 3px;",
