@@ -273,36 +273,24 @@
 		// "variable.readonly.local": "#c7c7c7ed",
 		// "variable.local": "#c0abb0",
 		"parameter.declaration": {
-			"foreground": "#99ff3f",
+			// "foreground": "#99ff3f",
 			"fontStyle": "",
 		},
-		"parameter": {
-			"foreground": "#99ff3f",
-			"fontStyle": "italic",
-		},
+		"parameter": {},
 		"variable.declaration.readonly": {}
 	},
 	"tokenColors": [
 		{
 			"scope": "meta.parameters variable.parameter",
 			"settings": {
-				"foreground": "#82f654",
+				"foreground": "#aafe65",
 				"fontStyle": ""
 			}
 		},
 		{
 			"scope": "meta.block variable.parameter",
 			"settings": {
-				"foreground": "#82f654",
-				"fontStyle": ""
-			}
-		},
-		{
-			"scope": [
-				"entity.name.parameter.destructured"
-			],
-			"settings": {
-				"foreground": "#f65454",
+				"foreground": "#aafe65",
 				"fontStyle": ""
 			}
 		},
@@ -343,12 +331,6 @@
 				"foreground": "#D2A6FF"
 			}
 		},
-		// {
-		// 	"scope": ["variable", "variable.parameter.function-call"],
-		// 	"settings": {
-		// 		"foreground": "#BFBDB6"
-		// 	}
-		// },
 		{
 			"scope": [
 				"variable.member"
@@ -997,7 +979,8 @@
 				"meta.block storage.type"
 			],
 			"settings": {
-				"foreground": "#90d0f6"
+				"foreground": "#03BBF5",
+				"fontStyle": ""
 			}
 		},
 		{
@@ -1021,7 +1004,7 @@
 		{
 			"scope": "support.class",
 			"settings": {
-				"foreground": "#25E6C3"
+				"foreground": "#FF8965"
 			}
 		},
 		{
@@ -1035,8 +1018,8 @@
 				"support.constant"
 			],
 			"settings": {
-				"foreground": "#F29668",
-				"fontStyle": "italic"
+				"foreground": "#FFC45F",
+				"fontStyle": ""
 			}
 		},
 		{
@@ -1103,7 +1086,7 @@
 				"variable.local.readwrite"
 			],
 			"settings": {
-				"foreground": "#d9b3b3",
+				"foreground": "#bda6a6",
 				"fontStyle": ""
 			}
 		},
@@ -1145,7 +1128,7 @@
 				"meta.block variable.local.constant",
 			],
 			"settings": {
-				"foreground": "#B7B7B7",
+				"foreground": "#aaaaaa",
 				"fontStyle": ""
 			}
 		},
@@ -1220,15 +1203,23 @@
 			}
 		},
 		{
-			"scope": "meta.block meta.block keyword.control.flow",
+			"scope": [
+				"meta.block meta.arrow keyword.control.flow",
+				"meta.block meta.function keyword.control.flow"
+			],
 			"settings": {
-				"foreground": "#ff88b0"
+				"foreground": "#ff85ad"
 			}
 		},
 		{
-			"scope": "meta.block meta.block meta.block keyword.control.flow",
+			"scope": [
+				"meta.block meta.arrow meta.arrow keyword.control.flow",
+				"meta.block meta.arrow meta.function keyword.control.flow",
+				"meta.block meta.function meta.arrow keyword.control.flow",
+				"meta.block meta.function meta.function keyword.control.flow"
+			],
 			"settings": {
-				"foreground": "#ffacd8"
+				"foreground": "#ffb3dc"
 			}
 		},
 		{
