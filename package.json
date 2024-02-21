@@ -2,7 +2,7 @@
   "name": "overload",
   "displayName": "overload",
   "description": "A vibrant theme, works best with Solidity / TypeScript.",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "publisher": "0xp",
   "engines": {
     "vscode": "^1.80.0"
@@ -23,31 +23,42 @@
         "path": "./themes/overload-color-theme.json"
       }
     ],
-    "configurationDefaults": {
-      "editor.tokenColorCustomizations": {
-        "[*]": {
-          "textMateRules": [
-            {
-              "scope": [
-                "variable"
-              ],
-              "settings": {
-                "foreground": "none",
-                "fontStyle": "none"
-              }
-            },
-            {
-              "scope": [
-                "entity.name.function"
-              ],
-              "settings": {
-                "foreground": "none",
-                "fontStyle": "none"
-              }
-            }
+    "semanticTokenScopes": [
+      {
+        "scopes": {
+          "variable.declaration.readonly.local": [
+            "meta.block meta.definition.variable variable.other.constant"
+          ],
+          "variable.declaration.local": [
+            "meta.block meta.definition.variable entity.name.variable"
+          ],
+          "variable.declaration": [
+            "meta.definition.variable variable.other.readwrite"
+          ],
+          "variable.readonly.local": [
+            "meta.block variable.local.constant"
+          ],
+          "variable.local": [
+            "variable.local.readwrite"
+          ],
+          "method.defaultLibrary": [
+            "support.method"
+          ],
+          "parameter": [
+            "meta.block variable.parameter"
+          ],
+          "parameter.declaration": [
+            "meta.parameters variable.parameter"
+          ],
+          "property.declaration": [
+            "meta.object.member meta.objectliteral",
+            "meta.object-literal.key",
+            "meta.definition.property variable.object.property"
           ]
         }
-      },
+      }
+    ],
+    "configurationDefaults": {
       "apc.stylesheet": {
         ".monaco-scrollable-element.modified-in-monaco-diff-editor.vs": "display: none;",
         ".monaco-editor .insert-sign": "color: #81ff89; opacity: 1 !important; font-weight: 700; margin-left: 3px;",

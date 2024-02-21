@@ -13,26 +13,6 @@
 _settings.json_
 ```json
 {
-  "editor.tokenColorCustomizations": {
-		"[*]": {
-			"textMateRules": [
-				{
-					"scope": ["variable"],
-					"settings": {
-						"foreground": "none",
-						"fontStyle": "none"
-					}
-				},
-				{
-					"scope": ["entity.name.function"],
-					"settings": {
-						"foreground": "none",
-						"fontStyle": "none"
-					}
-				}
-			]
-		}
-  },
   "apc.stylesheet": {
         ".monaco-scrollable-element.modified-in-monaco-diff-editor.vs": "display: none;",
         ".monaco-editor .insert-sign": "color: #81ff89; opacity: 1 !important; font-weight: 700; margin-left: 3px;",
@@ -47,11 +27,11 @@ _settings.json_
         ".monaco-breadcrumb-item:has([class*='codicon-symbol']) > .codicon:last-child:before": "content: ''; #ebff7b !important;",
         ".monaco-breadcrumb-item:has([class*='-file']) .codicon:last-child:before": "content: ' ';"
       },
-      "apc.header": {
+  "apc.header": {
         "default": 48,
         "fontSize": 12.5
-      },
-      "apc.listRow": {
+  },
+  "apc.listRow": {
         "height": 26,
         "fontSize": 12.1,
         "lists": [
@@ -66,10 +46,10 @@ _settings.json_
           "debug-breakpoints",
           "tree"
         ]
-      },
-      "apc.font.family": "Roboto Mono",
-      "apc.monospace.font.family": "Roboto Mono",
-      "apc.parts.font.family": {
+  },
+  "apc.font.family": "Roboto Mono",
+  "apc.monospace.font.family": "Roboto Mono",
+  "apc.parts.font.family": {
         "sidebar": "Roboto Mono",
         "titlebar": "Roboto Mono",
         "activityBar": "Roboto Mono",
@@ -83,32 +63,31 @@ _settings.json_
         "extension-editor": "Roboto Mono",
         "monaco-menu": "Roboto Mono"
       },
-      "window.zoomLevel": -1.65,
-      "workbench.tree.indent": 28,
-      "editor.lineHeight": 1.85,
-      "editor.fontWeight": "400",
-      "editor.fontLigatures": true,   
-      "editor.letterSpacing": 1,
-      "editor.fontSize": 12.4,    
-      "workbench.fontAliasing": "default",
-      "scm.inputFontFamily": "Roboto Mono",
-      "editor.fontFamily": "Roboto Mono, Jetbrains Mono, 'Input Mono', Verdana",
-      "editor.inlineSuggest.fontFamily": "Roboto Mono",
-      "editor.codeLensFontFamily": "Roboto Mono",
-      "editor.defaultColorDecorators": true,
-      "editor.guides.bracketPairs": "active",
-      "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-      "editor.guides.highlightActiveIndentation": "always",
-      "editor.colorDecorators": true,
-      "editor.renderWhitespace": "none",
-      "editor.minimap.renderCharacters": false,
-      "editor.minimap.enabled": false,
-      "editor.glyphMargin": false,
-      "editor.stickyScroll.enabled": true,
-      "editor.showFoldingControls": "always",
-      "diffEditor.renderIndicators": true,
-      "window.density.editorTabHeight": "default",
-      "breadcrumbs.icons": true
-    }
+  "window.zoomLevel": -1.65,
+  "workbench.tree.indent": 28,
+  "editor.lineHeight": 1.85,
+  "editor.fontWeight": "400",
+  "editor.fontLigatures": true,   
+  "editor.letterSpacing": 1,
+  "editor.fontSize": 12.4,    
+  "workbench.fontAliasing": "default",
+  "scm.inputFontFamily": "Roboto Mono",
+  "editor.fontFamily": "Roboto Mono, Jetbrains Mono, 'Input Mono', Verdana",
+  "editor.inlineSuggest.fontFamily": "Roboto Mono",
+  "editor.codeLensFontFamily": "Roboto Mono",
+  "editor.defaultColorDecorators": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.guides.highlightActiveIndentation": "always",
+  "editor.colorDecorators": true,
+  "editor.renderWhitespace": "none",
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.enabled": false,
+  "editor.glyphMargin": false,
+  "editor.stickyScroll.enabled": true,
+  "editor.showFoldingControls": "always",
+  "diffEditor.renderIndicators": true,
+  "window.density.editorTabHeight": "default",
+  "breadcrumbs.icons": true
 }
 ```
