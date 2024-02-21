@@ -257,7 +257,7 @@
 	"semanticTokenColors": {
 		// "method.defaultLibrary": "#13DDB8",
 		"interface.defaultLibrary": {
-			"foreground": "#ff8965"
+			"foreground": "#ffb57d"
 		},
 		// "type.defaultLibrary": "#69f5ff",
 		// "type": "#09EFFF",
@@ -839,6 +839,7 @@
 		},
 		{
 			"scope": [
+				"storage.type.class.jsdoc",
 				"storage.type.dev.natspec",
 				"storage.type.param.natspec",
 				"storage.type.custom.natspec"
@@ -964,8 +965,10 @@
 		{
 			"scope": [
 				"storage.type.type",
+				"storage.type.interface",
 				"support.type.primitive",
-				"constant.language.boolean.true"
+				"constant.language.boolean.true",
+				"meta.type.parameters storage.modifier"
 			],
 			"settings": {
 				"foreground": "#03BBF5",
@@ -1004,7 +1007,7 @@
 		{
 			"scope": "support.class",
 			"settings": {
-				"foreground": "#FF8965"
+				"foreground": "#ffb57d"
 			}
 		},
 		{
@@ -1213,6 +1216,7 @@
 		},
 		{
 			"scope": [
+				"storage.modifier",
 				"meta.block meta.arrow keyword.control.flow",
 				"meta.block meta.function keyword.control.flow"
 			],
