@@ -1023,6 +1023,15 @@
 			}
 		},
 		{
+			"scope": [
+				"support.variable.property"
+			],
+			"settings": {
+				"foreground": "#68f7dc",
+				"fontStyle": ""
+			}
+		},
+		{
 			"scope": "keyword.operator.new",
 			"settings": {
 				"foreground": "#03BBF5",
