@@ -1,4 +1,4 @@
 node_modules
 *.vsix
 *.DS_Store
-preview_old.png
+temp
