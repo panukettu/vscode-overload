@@ -2,7 +2,7 @@
   "name": "overload",
   "displayName": "overload",
   "description": "A vibrant theme, works best with Solidity / TypeScript.",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "publisher": "0xp",
   "engines": {
     "vscode": "^1.80.0"
