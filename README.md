@@ -2,6 +2,9 @@
 
 ## A vibrant theme for VSCode (best with Solidity/TypeScript)
 
+- For full Solidity semantic highlighting you need [vsc-solidity](https://marketplace.visualstudio.com/items?itemName=0xp.vsc-solidity)
+- For extended font overrides and breadcrumbs customization this uses [Apc Customize UI++](https://marketplace.visualstudio.com/items?itemName=drcika.apc-extension)
+
 ### Default Colors
 
 ![Main](assets/preview.png)
@@ -62,20 +65,6 @@ _settings.json_
 	},
 	"apc.font.family": "Roboto Mono",
 	"apc.monospace.font.family": "Roboto Mono",
-	"apc.parts.font.family": {
-		"sidebar": "Roboto Mono",
-		"titlebar": "Roboto Mono",
-		"activityBar": "Roboto Mono",
-		"panel": "Roboto Mono",
-		"widget": "Roboto Mono",
-		"tabs": "Roboto Mono",
-		"auxiliarybar": "Roboto Mono",
-		"banner": "Roboto Mono",
-		"statusbar": "Roboto Mono",
-		"settings-body": "Roboto Mono",
-		"extension-editor": "Roboto Mono",
-		"monaco-menu": "Roboto Mono"
-	},
 	"window.zoomLevel": -1.65,
 	"workbench.tree.indent": 28,
 	"editor.lineHeight": 1.85,
