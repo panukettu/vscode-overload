@@ -19,7 +19,7 @@
 _There is an issue in latest VSCode and the APC extension where it breaks using extensions tab_
 _Just toggle `Disable APC Extension` when you need to install some extensions_
 
-- [Roboto Mono](https://github.com/lemeb/a-better-ligaturizer/tree/master/output-fonts) is default font, just replace with whatever you like.
+- [Ubuntu Mono & Roboto Mono](https://github.com/lemeb/a-better-ligaturizer/tree/master/output-fonts) are the default fonts, just replace with whatever you like.
 
 - You probably need to explicitly -> CMD + SHIFT + P -> `Enable APC extension` after adding the APC configuration
 
@@ -45,7 +45,7 @@ _settings.json_
 	},
 	"apc.header": {
 		"default": 48,
-		"fontSize": 12.5
+		"fontSize": 12.6
 	},
 	"apc.listRow": {
 		"height": 26,
@@ -63,20 +63,38 @@ _settings.json_
 			"tree"
 		]
 	},
-	"apc.font.family": "Roboto Mono",
-	"apc.monospace.font.family": "Roboto Mono",
-	"window.zoomLevel": -1.65,
-	"workbench.tree.indent": 28,
-	"editor.lineHeight": 1.85,
-	"editor.fontWeight": "400",
-	"editor.fontLigatures": true,
-	"editor.letterSpacing": 1,
-	"editor.fontSize": 12.4,
-	"workbench.fontAliasing": "default",
+	"apc.font.family": "Ubuntu Mono",
+	"apc.monospace.font.family": "Ubuntu Mono",
+	"apc.parts.font.family": {
+		"sidebar": "Roboto Mono",
+		"titlebar": "Roboto Mono",
+		"activityBar": "Roboto Mono",
+		"panel": "Roboto Mono",
+		"widget": "Roboto Mono",
+		"tabs": "Roboto Mono",
+		"auxiliarybar": "Roboto Mono",
+		"banner": "Roboto Mono",
+		"statusbar": "Roboto Mono",
+		"settings-body": "Roboto Mono",
+		"extension-editor": "Roboto Mono",
+		"monaco-menu": "Roboto Mono"
+	},
+	"editor.fontFamily": "Ubuntu Mono, Roboto Mono, Input Mono, Verdana",
+	"workbench.fontAliasing": "auto",
+	"editor.inlineSuggest.fontFamily": "Ubuntu Mono",
+	"editor.codeLensFontFamily": "Ubuntu Mono",
+	"terminal.integrated.fontFamily": "Roboto Mono",
 	"scm.inputFontFamily": "Roboto Mono",
-	"editor.fontFamily": "Roboto Mono, Jetbrains Mono, 'Input Mono', Verdana",
-	"editor.inlineSuggest.fontFamily": "Roboto Mono",
-	"editor.codeLensFontFamily": "Roboto Mono",
+	"editor.fontSize": 13.6,
+	"editor.suggestFontSize": 13,
+	"editor.codeLensFontSize": 11,
+	"editor.letterSpacing": 0.9,
+	"editor.lineHeight": 1.8,
+	"editor.fontWeight": 400,
+	"editor.fontLigatures": true,
+	"window.zoomLevel": -1.45,
+	"workbench.tree.indent": 26,
+	"workbench.tree.renderIndentGuides": "none",
 	"editor.defaultColorDecorators": true,
 	"editor.guides.bracketPairs": "active",
 	"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
@@ -89,7 +107,7 @@ _settings.json_
 	"editor.stickyScroll.enabled": true,
 	"editor.showFoldingControls": "always",
 	"diffEditor.renderIndicators": true,
-	"window.density.editorTabHeight": "default",
-	"breadcrumbs.icons": true
+	"breadcrumbs.icons": true,
+	"workbench.iconTheme": "material-icon-theme"
 }
 ```

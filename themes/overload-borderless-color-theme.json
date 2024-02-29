@@ -268,7 +268,8 @@
 		"property.struct": "#D0CAFD",
 		"variable.local.storage:solidity": "#ffe683",
 		"parameter.function.input.storage": "#ffe683",
-		"property.assignment.struct": "#FFC45F",
+		"property.assignment.struct": "#ffd468",
+		"property.mapping.struct": "#ffd468",
 		"property:solidity": "#FFC45F",
 		"property.defaultLibrary:solidity": {
 			"foreground": "#44F6C6",
