@@ -28,6 +28,8 @@ _settings.json_
 ```json
 {
 	"apc.stylesheet": {
+		".sidebar.right > .composite.title": "position: absolute;",
+		".tabs-and-actions-container > .inline-tabs-placeholder": "position: absolute;",
 		".monaco-scrollable-element.modified-in-monaco-diff-editor.vs": "display: none;",
 		".monaco-editor .insert-sign": "color: #81ff89; opacity: 1 !important; font-weight: 700; margin-left: 3px;",
 		".monaco-editor .delete-sign": "color: red; opacity: 1 !important; font-weight: bold;",
@@ -43,13 +45,37 @@ _settings.json_
 		".monaco-breadcrumb-item:has([class*='codicon-symbol']) > .codicon:last-child:before": "content: ''; #ebff7b !important;",
 		".monaco-breadcrumb-item:has([class*='-file']) .codicon:last-child:before": "content: ' ';"
 	},
+	"apc.sidebar.titlebar": {
+		"fontSize": 0.1,
+		"height": -15
+	},
+	"apc.activityBar": {
+		"position": "bottom",
+		"hideSettings": true,
+		"itemSize": 17,
+		"itemMargin": 1
+	},
 	"apc.header": {
 		"default": 48,
 		"fontSize": 12.6
 	},
+	// for vibrancy
+	"apc.electron": {
+		"opacity": 0.97,
+		"frame": false,
+		"transparent": true,
+		"vibrancy": "hud",
+		"visualEffectState": "active"
+	},
 	"apc.listRow": {
 		"height": 26,
-		"fontSize": 12.1,
+		"fontSize": 12.5,
+		"parts": {
+			"quick-input-list": {
+				"height": 28,
+				"fontSize": 14
+			}
+		},
 		"lists": [
 			"customview-tree",
 			"results",
