@@ -13,6 +13,10 @@
 
 ![Alternative](assets/alt_preview.png)
 
+### Vibrancy
+
+![Vibrancy](assets/vibrancy_preview.png)
+
 ### APC Extension Setup
 
 **NOTE!**
