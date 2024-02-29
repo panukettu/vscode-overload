@@ -191,7 +191,7 @@
     "selection.background": "#249edb4d",
     "settings.headerForeground": "#bfbdb6",
     "settings.modifiedItemIndicator": "#00aaff",
-    "sideBar.background": "#0404041b",
+    "sideBar.background": "#101010",
     "sideBar.border": "#00000077",
     "sideBar.foreground": "#afbabc",
     "sideBarSectionHeader.background": "#2226271e",
@@ -1317,7 +1317,7 @@
         "meta.jsx string"
       ],
       "settings": {
-        "foreground": "#a2ecad"
+        "foreground": "#5fef3b"
       }
     },
     {
@@ -1325,7 +1325,19 @@
         "string"
       ],
       "settings": {
-        "foreground": "#a2ecad"
+        "foreground": "#5fef3b"
+      }
+    },
+    {
+      "scope": "meta.parameters variable.other.readwrite",
+      "settings": {
+        "foreground": "#FFC45F"
+      }
+    },
+    {
+      "scope": "meta.var.expr variable.other.property",
+      "settings": {
+        "foreground": "#D0CAFD"
       }
     },
     {

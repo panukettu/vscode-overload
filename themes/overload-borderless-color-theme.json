@@ -1315,7 +1315,7 @@
 				"meta.jsx string"
 			],
 			"settings": {
-				"foreground": "#a2ecad"
+				"foreground": "#5fef3b"
 			}
 		},
 		{
@@ -1323,7 +1323,19 @@
 				"string"
 			],
 			"settings": {
-				"foreground": "#a2ecad"
+				"foreground": "#5fef3b"
+			}
+		},
+		{
+			"scope": "meta.parameters variable.other.readwrite",
+			"settings": {
+				"foreground": "#FFC45F"
+			}
+		},
+		{
+			"scope": "meta.var.expr variable.other.property",
+			"settings": {
+				"foreground": "#D0CAFD"
 			}
 		},
 		{
