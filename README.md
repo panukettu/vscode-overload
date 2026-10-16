@@ -3,7 +3,7 @@
 ## A vibrant theme for VSCode (best with Solidity/TypeScript)
 
 - For full Solidity semantic highlighting you need [vsc-solidity](https://marketplace.visualstudio.com/items?itemName=0xp.vsc-solidity)
-- For extended font overrides and breadcrumbs customization this uses [Apc Customize UI++](https://marketplace.visualstudio.com/items?itemName=drcika.apc-extension)
+- Optional: the UI font, breadcrumbs styling and macOS window vibrancy need [Custom UI Style](https://marketplace.visualstudio.com/items?itemName=subframe7536.custom-ui-style), see [below](#optional-ui-tweaks-custom-ui-style)
 
 ### Default Colors
 
@@ -17,127 +17,118 @@
 
 ![Vibrancy](assets/vibrancy_preview.png)
 
-### APC Extension Setup
+### Default settings
 
-**NOTE!**
-_There is an issue in latest VSCode and the APC extension where it breaks using extensions tab_
-_Just toggle `Disable APC Extension` when you need to install some extensions_
+Installing the theme sets these editor defaults (you can override any of them in your own `settings.json`):
 
-- [Ubuntu Mono & Roboto Mono](https://github.com/lemeb/a-better-ligaturizer/tree/master/output-fonts) are the default fonts, just replace with whatever you like.
+- [Ubuntu Mono & Roboto Mono](https://github.com/lemeb/a-better-ligaturizer/tree/master/output-fonts) as editor / terminal fonts, just replace with whatever you like.
+- Font sizes, line height, zoom level, tree indent, activity bar at the bottom, minimap off, [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme) icons, etc. See `configurationDefaults` in [package.json](package.json) for the full list.
 
-- You probably need to explicitly -> CMD + SHIFT + P -> `Enable APC extension` after adding the APC configuration
+### Optional UI tweaks (Custom UI Style)
+
+Earlier versions used the APC Customize UI++ extension, which no longer works with current VSCode. VSCode has no built-in way to restyle the UI with CSS or change the window itself, so the remaining tweaks (UI font, breadcrumbs styling, diff markers and vibrancy) now use [Custom UI Style](https://marketplace.visualstudio.com/items?itemName=subframe7536.custom-ui-style). It's optional and **patches VSCode's own files**, so read its README first. After editing the settings, run `Custom UI Style: Reload` from the command palette.
 
 _settings.json_
 
 ```json
 {
-	"apc.stylesheet": {
-		".sidebar.right > .composite.title": "position: absolute;",
-		".tabs-and-actions-container > .inline-tabs-placeholder": "position: absolute;",
-		".monaco-scrollable-element.modified-in-monaco-diff-editor.vs": "display: none;",
-		".monaco-editor .insert-sign": "color: #81ff89; opacity: 1 !important; font-weight: 700; margin-left: 3px;",
-		".monaco-editor .delete-sign": "color: red; opacity: 1 !important; font-weight: bold;",
-		".monaco-breadcrumbs": "font-size: 11px; letter-spacing: 0.2px; font-family: 'Roboto Mono'; font-weight: 400;",
-		".breadcrumbs-below-tabs": "display: flex; height: 27px; align-items: center; justify-content: center;",
-		".monaco-breadcrumb-item + .outline-element:has(.outline-element-label) > *": "position: absolute; right: 15px; color: #12ff89 !important;",
-		".monaco-breadcrumb-item + .outline-element:has(.outline-element-label) > .codicon": "display: none;",
-		".monaco-breadcrumb-item:has([class*='-file']) > :first-of-type": "color: #98ff7c !important; ",
-		".monaco-breadcrumb-item:not(:has([class*='-file'])) > .codicon:last-child:before": "display:flex; align-items: flex-start; justify-items: flex-start; content: '/'; margin: 0 1px 0 1px; font-size: 16px; height: 18px; color: #95aeb4;",
-		".monaco-breadcrumb-item:has(.codicon[class*='codicon-symbol'])": "color: #A1F4AD !important;",
-		".monaco-breadcrumb-item:has(.codicon[class*='codicon-symbol']):last-of-type": "color: #FFFFC6 !important;",
-		".monaco-breadcrumb-item:has(.codicon[class*='codicon-symbol']):before": "margin: 0 9px 0 9px; min-width: 20px; margin-top: 1.5px; height:25px !important; !important; display: flex; align-items: flex-start; content: '⇢'; font-size: 17px; color: #CBff7b !important;",
-		".monaco-breadcrumb-item:has([class*='codicon-symbol']) > .codicon:last-child:before": "content: ''; #ebff7b !important;",
-		".monaco-breadcrumb-item:has([class*='-file']) .codicon:last-child:before": "content: ' ';"
-	},
-	"apc.sidebar.titlebar": {
-		"fontSize": 0.1,
-		"height": -15
-	},
-	"apc.activityBar": {
-		"position": "bottom",
-		"hideSettings": true,
-		"itemSize": 17,
-		"itemMargin": 1
-	},
-	"apc.header": {
-		"default": 48,
-		"fontSize": 12.6
-	},
-	// for vibrancy
-	"apc.electron": {
+	"custom-ui-style.font.sansSerif": "Roboto Mono",
+	"custom-ui-style.font.monospace": "Ubuntu Mono",
+	"custom-ui-style.stylesheet": {
+		".sidebar.right > .composite.title": {
+			"position": "absolute"
+		},
+		".tabs-and-actions-container > .inline-tabs-placeholder": {
+			"position": "absolute"
+		},
+		".monaco-scrollable-element.modified-in-monaco-diff-editor.vs": {
+			"display": "none"
+		},
+		".monaco-editor .insert-sign": {
+			"color": "#81ff89",
+			"opacity": "1 !important",
+			"font-weight": "700",
+			"margin-left": "3px"
+		},
+		".monaco-editor .delete-sign": {
+			"color": "red",
+			"opacity": "1 !important",
+			"font-weight": "bold"
+		},
+		".monaco-breadcrumbs": {
+			"font-size": "11px",
+			"letter-spacing": "0.2px",
+			"font-family": "'Roboto Mono'",
+			"font-weight": "400"
+		},
+		".breadcrumbs-below-tabs": {
+			"display": "flex",
+			"height": "27px",
+			"align-items": "center",
+			"justify-content": "center"
+		},
+		".monaco-breadcrumb-item + .outline-element:has(.outline-element-label) > *": {
+			"position": "absolute",
+			"right": "15px",
+			"color": "#12ff89 !important"
+		},
+		".monaco-breadcrumb-item + .outline-element:has(.outline-element-label) > .codicon": {
+			"display": "none"
+		},
+		".monaco-breadcrumb-item:has([class*='-file']) > :first-of-type": {
+			"color": "#98ff7c !important"
+		},
+		".monaco-breadcrumb-item:not(:has([class*='-file'])) > .codicon:last-child:before": {
+			"display": "flex",
+			"align-items": "flex-start",
+			"justify-items": "flex-start",
+			"content": "'/'",
+			"margin": "0 1px 0 1px",
+			"font-size": "16px",
+			"height": "18px",
+			"color": "#95aeb4"
+		},
+		".monaco-breadcrumb-item:has(.codicon[class*='codicon-symbol'])": {
+			"color": "#A1F4AD !important"
+		},
+		".monaco-breadcrumb-item:has(.codicon[class*='codicon-symbol']):last-of-type": {
+			"color": "#FFFFC6 !important"
+		},
+		".monaco-breadcrumb-item:has(.codicon[class*='codicon-symbol']):before": {
+			"margin": "0 9px 0 9px",
+			"min-width": "20px",
+			"margin-top": "1.5px",
+			"height": "25px !important",
+			"display": "flex",
+			"align-items": "flex-start",
+			"content": "'⇢'",
+			"font-size": "17px",
+			"color": "#CBff7b !important"
+		},
+		".monaco-breadcrumb-item:has([class*='codicon-symbol']) > .codicon:last-child:before": {
+			"content": "''"
+		},
+		".monaco-breadcrumb-item:has([class*='-file']) .codicon:last-child:before": {
+			"content": "' '"
+		}
+	}
+}
+```
+
+#### Vibrancy themes (macOS)
+
+The `overload vibrancy` themes use translucent backgrounds, so they only look right when the window itself is transparent. Add this too:
+
+```json
+{
+	"custom-ui-style.electron": {
 		"opacity": 0.97,
 		"frame": false,
 		"transparent": true,
 		"vibrancy": "hud",
 		"visualEffectState": "active"
-	},
-	"apc.listRow": {
-		"height": 26,
-		"fontSize": 12.5,
-		"parts": {
-			"quick-input-list": {
-				"height": 28,
-				"fontSize": 14
-			}
-		},
-		"lists": [
-			"customview-tree",
-			"results",
-			"open-editors",
-			"quick-input-list",
-			"explorer-folders-view",
-			"outline-tree",
-			"scm-view",
-			"debug-view-content",
-			"debug-breakpoints",
-			"tree"
-		]
-	},
-	"apc.font.family": "Ubuntu Mono",
-	"apc.monospace.font.family": "Ubuntu Mono",
-	"apc.parts.font.family": {
-		"sidebar": "Roboto Mono",
-		"titlebar": "Roboto Mono",
-		"activityBar": "Roboto Mono",
-		"panel": "Roboto Mono",
-		"widget": "Roboto Mono",
-		"tabs": "Roboto Mono",
-		"auxiliarybar": "Roboto Mono",
-		"banner": "Roboto Mono",
-		"statusbar": "Roboto Mono",
-		"settings-body": "Roboto Mono",
-		"extension-editor": "Roboto Mono",
-		"monaco-menu": "Roboto Mono"
-	},
-	"editor.fontFamily": "Ubuntu Mono, Roboto Mono, Input Mono, Verdana",
-	"workbench.fontAliasing": "auto",
-	"editor.inlineSuggest.fontFamily": "Ubuntu Mono",
-	"editor.codeLensFontFamily": "Ubuntu Mono",
-	"terminal.integrated.fontFamily": "Roboto Mono",
-	"scm.inputFontFamily": "Roboto Mono",
-	"editor.fontSize": 13.6,
-	"editor.suggestFontSize": 13,
-	"editor.codeLensFontSize": 11,
-	"editor.letterSpacing": 0.9,
-	"editor.lineHeight": 1.8,
-	"editor.fontWeight": 400,
-	"editor.fontLigatures": true,
-	"window.zoomLevel": -1.45,
-	"workbench.tree.indent": 26,
-	"workbench.tree.renderIndentGuides": "none",
-	"editor.defaultColorDecorators": true,
-	"editor.guides.bracketPairs": "active",
-	"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-	"editor.guides.highlightActiveIndentation": "always",
-	"editor.colorDecorators": true,
-	"editor.renderWhitespace": "none",
-	"editor.minimap.renderCharacters": false,
-	"editor.minimap.enabled": false,
-	"editor.glyphMargin": false,
-	"editor.stickyScroll.enabled": true,
-	"editor.showFoldingControls": "always",
-	"diffEditor.renderIndicators": true,
-	"breadcrumbs.icons": true,
-	"workbench.iconTheme": "material-icon-theme"
+	}
 }
 ```
+
+`"frame": false` hides the native title bar and traffic light buttons. Remove it if you want to keep them.
