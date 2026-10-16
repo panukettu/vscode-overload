@@ -1,11 +1,11 @@
 {
   "name": "overload",
   "displayName": "overload",
-  "description": "A vibrant theme, works best with Solidity / TypeScript.",
-  "version": "1.2.0",
+  "description": "A vibrant theme in a dozen palettes, works best with Solidity / TypeScript.",
+  "version": "1.3.0",
   "publisher": "0xp",
   "engines": {
-    "vscode": "^1.80.0"
+    "vscode": "^1.90.0"
   },
   "icon": "assets/icon_512.png",
   "categories": [
@@ -46,6 +46,116 @@
         "label": "overload vibrancy borderless",
         "uiTheme": "vs-dark",
         "path": "./themes/overload-vibrancy-borderless-color-theme.json"
+      },
+      {
+        "label": "overload ember",
+        "uiTheme": "vs-dark",
+        "path": "./themes/overload-ember-color-theme.json"
+      },
+      {
+        "label": "overload ember borderless",
+        "uiTheme": "vs-dark",
+        "path": "./themes/overload-ember-borderless-color-theme.json"
+      },
+      {
+        "label": "overload graphite",
+        "uiTheme": "vs-dark",
+        "path": "./themes/overload-graphite-color-theme.json"
+      },
+      {
+        "label": "overload graphite borderless",
+        "uiTheme": "vs-dark",
+        "path": "./themes/overload-graphite-borderless-color-theme.json"
+      },
+      {
+        "label": "overload violet",
+        "uiTheme": "vs-dark",
+        "path": "./themes/overload-violet-color-theme.json"
+      },
+      {
+        "label": "overload violet borderless",
+        "uiTheme": "vs-dark",
+        "path": "./themes/overload-violet-borderless-color-theme.json"
+      },
+      {
+        "label": "overload pink",
+        "uiTheme": "vs-dark",
+        "path": "./themes/overload-pink-color-theme.json"
+      },
+      {
+        "label": "overload pink borderless",
+        "uiTheme": "vs-dark",
+        "path": "./themes/overload-pink-borderless-color-theme.json"
+      },
+      {
+        "label": "overload abyss",
+        "uiTheme": "vs-dark",
+        "path": "./themes/overload-abyss-color-theme.json"
+      },
+      {
+        "label": "overload abyss borderless",
+        "uiTheme": "vs-dark",
+        "path": "./themes/overload-abyss-borderless-color-theme.json"
+      },
+      {
+        "label": "overload solar",
+        "uiTheme": "vs-dark",
+        "path": "./themes/overload-solar-color-theme.json"
+      },
+      {
+        "label": "overload solar borderless",
+        "uiTheme": "vs-dark",
+        "path": "./themes/overload-solar-borderless-color-theme.json"
+      },
+      {
+        "label": "overload blush",
+        "uiTheme": "vs-dark",
+        "path": "./themes/overload-blush-color-theme.json"
+      },
+      {
+        "label": "overload blush borderless",
+        "uiTheme": "vs-dark",
+        "path": "./themes/overload-blush-borderless-color-theme.json"
+      },
+      {
+        "label": "overload fuchsia",
+        "uiTheme": "vs-dark",
+        "path": "./themes/overload-fuchsia-color-theme.json"
+      },
+      {
+        "label": "overload fuchsia borderless",
+        "uiTheme": "vs-dark",
+        "path": "./themes/overload-fuchsia-borderless-color-theme.json"
+      },
+      {
+        "label": "overload ocean",
+        "uiTheme": "vs-dark",
+        "path": "./themes/overload-ocean-color-theme.json"
+      },
+      {
+        "label": "overload ocean borderless",
+        "uiTheme": "vs-dark",
+        "path": "./themes/overload-ocean-borderless-color-theme.json"
+      },
+      {
+        "label": "overload primer",
+        "uiTheme": "vs-dark",
+        "path": "./themes/overload-primer-color-theme.json"
+      },
+      {
+        "label": "overload primer borderless",
+        "uiTheme": "vs-dark",
+        "path": "./themes/overload-primer-borderless-color-theme.json"
+      },
+      {
+        "label": "overload geist",
+        "uiTheme": "vs-dark",
+        "path": "./themes/overload-geist-color-theme.json"
+      },
+      {
+        "label": "overload geist borderless",
+        "uiTheme": "vs-dark",
+        "path": "./themes/overload-geist-borderless-color-theme.json"
       }
     ],
     "semanticTokenScopes": [
@@ -101,7 +211,7 @@
       "window.zoomLevel": -1.45,
       "workbench.tree.indent": 26,
       "workbench.tree.renderIndentGuides": "none",
-      "editor.defaultColorDecorators": true,
+      "editor.defaultColorDecorators": "auto",
       "editor.guides.bracketPairs": "active",
       "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
       "editor.guides.highlightActiveIndentation": "always",
@@ -115,10 +225,14 @@
       "diffEditor.renderIndicators": true,
       "breadcrumbs.icons": true,
       "workbench.iconTheme": "material-icon-theme",
-      "window.density.editorTabHeight": "default",
       "files.simpleDialog.enable": true,
       "workbench.activityBar.location": "bottom"
     }
+  },
+  "scripts": {
+    "build": "node scripts/build-themes.mjs",
+    "package": "vsce package",
+    "audit": "node scripts/audit-themes.mjs"
   },
   "repository": {
     "type": "git",
