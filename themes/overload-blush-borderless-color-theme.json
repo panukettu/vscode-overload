@@ -381,88 +381,90 @@
 	},
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
-		"class": "#ffe6a4",
-		"class.declaration": "#ffefc4",
-		"class.defaultLibrary": "#dcdca0",
-		"interface": "#f5cefe",
-		"interface.declaration": "#f9dffe",
-		"type": "#f5cefe",
-		"type.declaration": "#f9dffe",
-		"type.defaultLibrary": "#f5effa",
-		"enum": "#24c0fe",
-		"enum.declaration": "#71d6fe",
-		"enumMember": "#fec0b5",
-		"typeParameter": "#ffc5d5",
-		"namespace": "#faabf3",
-		"function": "#fe93a4",
-		"function.declaration": "#feb9c4",
-		"function.defaultLibrary": "#e7816d",
-		"method": "#feaca0",
-		"method.declaration": "#fec9c1",
-		"method.defaultLibrary": "#e7816d",
-		"variable.defaultLibrary": "#f5a7f9",
-		"variable.readonly.defaultLibrary": "#fec0b5",
+		"class": "#fee87a",
+		"class.declaration": "#fff2b4",
+		"class.defaultLibrary": "#feb07e",
+		"interface": "#b5a9fd",
+		"interface.declaration": "#beb5fe",
+		"type": "#b5a9fd",
+		"type.declaration": "#beb5fe",
+		"type.defaultLibrary": "#c2a9f6",
+		"enum": "#52b3fe",
+		"enum.declaration": "#6dbcfd",
+		"enumMember": "#4eecd3",
+		"typeParameter": "#bfbeff",
+		"namespace": "#acff99",
+		"function": "#ff8fa2",
+		"function.declaration": "#fea1af",
+		"function.defaultLibrary": "#f78164",
+		"method": "#ff919a",
+		"method.declaration": "#fea2a8",
+		"method.defaultLibrary": "#f78164",
+		"variable.defaultLibrary": "#77c566",
+		"variable.readonly.defaultLibrary": "#4eecd3",
 		"parameter.declaration": {
-			"fontStyle": ""
-		},
-		"parameter": {},
-		"variable.declaration.readonly": {},
-		"library": "#faabf3",
-		"event": "#24c0fe",
-		"using": "#feb4f7",
-		"interface:solidity": "#f5cefe",
-		"contract": "#ffe6a4",
-		"variable.local:solidity": "#dbcdcd",
-		"variable.storage:solidity": "#feb6ed",
-		"parameter.function.output": "#bfeff2",
-		"parameter.function.input": "#b6edce",
-		"property.struct": "#fecfe0",
-		"variable.local.storage:solidity": "#feb6ed",
-		"parameter.function.input.storage": "#feb6ed",
-		"property.assignment.struct": "#fec0b5",
-		"property:solidity": "#fec0b5",
-		"property.mapping.struct": "#fec0b5",
-		"property.defaultLibrary:solidity": {
-			"foreground": "#f0c7f9",
 			"fontStyle": "italic"
 		},
-		"parameter.function.output.storage": "#fec0b5",
+		"parameter": {
+			"fontStyle": "italic"
+		},
+		"variable.declaration.readonly": {},
+		"library": "#acff99",
+		"event": "#52b3fe",
+		"using": "#9ec9fe",
+		"interface:solidity": "#b5a9fd",
+		"contract": "#fee87a",
+		"variable.local:solidity": "#bca6ac",
+		"variable.storage:solidity": "#fef5ec",
+		"parameter.function.output": "#ecb4d3",
+		"parameter.function.input": "#feafc4",
+		"property.struct": "#e6c3ee",
+		"variable.local.storage:solidity": "#fef5ec",
+		"parameter.function.input.storage": "#fef5ec",
+		"property.assignment.struct": "#4eecd3",
+		"property:solidity": "#4eecd3",
+		"property.mapping.struct": "#4eecd3",
+		"property.defaultLibrary:solidity": {
+			"foreground": "#fe9e80",
+			"fontStyle": "italic"
+		},
+		"parameter.function.output.storage": "#4eecd3",
 		"interface.defaultLibrary": {
-			"foreground": "#f5effa"
+			"foreground": "#c2a9f6"
 		}
 	},
 	"tokenColors": [
 		{
 			"scope": "source.solidity storage.type.function, source.solidity storage.type.contract, source.solidity storage.type.interface, source.solidity storage.modifier.is",
 			"settings": {
-				"foreground": "#fbeeda"
+				"foreground": "#e5a403"
 			}
 		},
 		{
 			"scope": "source.solidity constant.language.boolean",
 			"settings": {
-				"foreground": "#b0b7ff"
+				"foreground": "#c8abfe"
 			}
 		},
 		{
 			"scope": "source.solidity entity.name.function.modifier",
 			"settings": {
-				"foreground": "#b6edce",
+				"foreground": "#feafc4",
 				"fontStyle": ""
 			}
 		},
 		{
 			"scope": "meta.parameters variable.parameter",
 			"settings": {
-				"foreground": "#b6edce",
-				"fontStyle": ""
+				"foreground": "#feafc4",
+				"fontStyle": "italic"
 			}
 		},
 		{
 			"scope": "meta.block variable.parameter",
 			"settings": {
-				"foreground": "#b6edce",
-				"fontStyle": ""
+				"foreground": "#feafc4",
+				"fontStyle": "italic"
 			}
 		},
 		{
@@ -480,7 +482,7 @@
 				"constant.other.symbol"
 			],
 			"settings": {
-				"foreground": "#cec0fd"
+				"foreground": "#65ee40"
 			}
 		},
 		{
@@ -490,7 +492,7 @@
 				"constant.other"
 			],
 			"settings": {
-				"foreground": "#fdc495"
+				"foreground": "#89e4eb"
 			}
 		},
 		{
@@ -499,7 +501,7 @@
 				"constant.language"
 			],
 			"settings": {
-				"foreground": "#b0b7ff"
+				"foreground": "#c8abfe"
 			}
 		},
 		{
@@ -507,7 +509,7 @@
 				"variable.member"
 			],
 			"settings": {
-				"foreground": "#fff6e7"
+				"foreground": "#4eecd3"
 			}
 		},
 		{
@@ -515,7 +517,7 @@
 				"variable.language"
 			],
 			"settings": {
-				"foreground": "#f59ae1",
+				"foreground": "#59b4f2",
 				"fontStyle": "italic"
 			}
 		},
@@ -524,7 +526,7 @@
 				"storage"
 			],
 			"settings": {
-				"foreground": "#fbeeda"
+				"foreground": "#e5a403"
 			}
 		},
 		{
@@ -532,7 +534,7 @@
 				"keyword"
 			],
 			"settings": {
-				"foreground": "#fbeeda"
+				"foreground": "#e5a403"
 			}
 		},
 		{
@@ -540,7 +542,7 @@
 				"keyword.operator"
 			],
 			"settings": {
-				"foreground": "#fdb6af"
+				"foreground": "#e9ae5d"
 			}
 		},
 		{
@@ -549,7 +551,7 @@
 				"punctuation.terminator"
 			],
 			"settings": {
-				"foreground": "#e9deded4"
+				"foreground": "#e9dedec0"
 			}
 		},
 		{
@@ -557,7 +559,7 @@
 				"punctuation.section"
 			],
 			"settings": {
-				"foreground": "#e9deded4"
+				"foreground": "#e9dedec0"
 			}
 		},
 		{
@@ -565,7 +567,7 @@
 				"punctuation.accessor"
 			],
 			"settings": {
-				"foreground": "#fca0a7"
+				"foreground": "#e9ae5d"
 			}
 		},
 		{
@@ -573,7 +575,7 @@
 				"punctuation.definition.template-expression"
 			],
 			"settings": {
-				"foreground": "#fe93a4"
+				"foreground": "#b197fe"
 			}
 		},
 		{
@@ -581,7 +583,7 @@
 				"punctuation.section.embedded"
 			],
 			"settings": {
-				"foreground": "#fe93a4"
+				"foreground": "#b197fe"
 			}
 		},
 		{
@@ -591,7 +593,7 @@
 				"source.c storage.type"
 			],
 			"settings": {
-				"foreground": "#24c0fe"
+				"foreground": "#c2a9f6"
 			}
 		},
 		{
@@ -599,7 +601,7 @@
 				"entity.other.inherited-class"
 			],
 			"settings": {
-				"foreground": "#eae19c"
+				"foreground": "#fee87a"
 			}
 		},
 		{
@@ -608,7 +610,7 @@
 				"storage.type.function"
 			],
 			"settings": {
-				"foreground": "#fbeeda"
+				"foreground": "#e5a403"
 			}
 		},
 		{
@@ -616,7 +618,7 @@
 				"source.java storage.type.primitive"
 			],
 			"settings": {
-				"foreground": "#24c0fe"
+				"foreground": "#52b3fe"
 			}
 		},
 		{
@@ -627,7 +629,7 @@
 				"support.function.go"
 			],
 			"settings": {
-				"foreground": "#ecb486"
+				"foreground": "#ff9abd"
 			}
 		},
 		{
@@ -635,7 +637,7 @@
 				"support.macro"
 			],
 			"settings": {
-				"foreground": "#fe93a4"
+				"foreground": "#77c566"
 			}
 		},
 		{
@@ -644,7 +646,7 @@
 				"entity.name.package"
 			],
 			"settings": {
-				"foreground": "#cec0fd"
+				"foreground": "#65ee40"
 			}
 		},
 		{
@@ -653,7 +655,7 @@
 				"meta.tag.sgml"
 			],
 			"settings": {
-				"foreground": "#fe93a4"
+				"foreground": "#ad98eb"
 			}
 		},
 		{
@@ -661,7 +663,7 @@
 				"support.class.component"
 			],
 			"settings": {
-				"foreground": "#fff6e7"
+				"foreground": "#8ac3fd"
 			}
 		},
 		{
@@ -671,7 +673,7 @@
 				"punctuation.definition.tag"
 			],
 			"settings": {
-				"foreground": "#a08489"
+				"foreground": "#7fd1d5"
 			}
 		},
 		{
@@ -679,7 +681,7 @@
 				"entity.other.attribute-name"
 			],
 			"settings": {
-				"foreground": "#f5cefe"
+				"foreground": "#14ebd1"
 			}
 		},
 		{
@@ -689,7 +691,7 @@
 				"storage.type.annotation"
 			],
 			"settings": {
-				"foreground": "#f5a7f9"
+				"foreground": "#7bd1ba"
 			}
 		},
 		{
@@ -697,7 +699,7 @@
 				"invalid"
 			],
 			"settings": {
-				"foreground": "#fd636c"
+				"foreground": "#ff6362"
 			}
 		},
 		{
@@ -706,7 +708,7 @@
 				"meta.diff.header"
 			],
 			"settings": {
-				"foreground": "#f5a7f9"
+				"foreground": "#c8abfe"
 			}
 		},
 		{
@@ -714,7 +716,7 @@
 				"source.ruby variable.other.readwrite"
 			],
 			"settings": {
-				"foreground": "#ecb486"
+				"foreground": "#ff9abd"
 			}
 		},
 		{
@@ -726,7 +728,7 @@
 				"source.stylus entity.name.tag"
 			],
 			"settings": {
-				"foreground": "#fe93a4"
+				"foreground": "#ad98eb"
 			}
 		},
 		{
@@ -746,7 +748,7 @@
 				"support.type.property-name"
 			],
 			"settings": {
-				"foreground": "#f5cefe",
+				"foreground": "#52b3fe",
 				"fontStyle": ""
 			}
 		},
@@ -763,7 +765,7 @@
 				"constant.numeric.line-number.match"
 			],
 			"settings": {
-				"foreground": "#fbeeda"
+				"foreground": "#e5a403"
 			}
 		},
 		{
@@ -771,7 +773,7 @@
 				"entity.name.filename.find-in-files"
 			],
 			"settings": {
-				"foreground": "#cec0fd"
+				"foreground": "#65ee40"
 			}
 		},
 		{
@@ -779,7 +781,7 @@
 				"message.error"
 			],
 			"settings": {
-				"foreground": "#fd636c"
+				"foreground": "#ff6362"
 			}
 		},
 		{
@@ -788,7 +790,7 @@
 				"markup.heading entity.name"
 			],
 			"settings": {
-				"foreground": "#fe93a4",
+				"foreground": "#e5a403",
 				"fontStyle": "bold"
 			}
 		},
@@ -798,7 +800,7 @@
 				"string.other.link"
 			],
 			"settings": {
-				"foreground": "#f5cefe"
+				"foreground": "#52b3fe"
 			}
 		},
 		{
@@ -806,7 +808,7 @@
 				"markup.italic"
 			],
 			"settings": {
-				"foreground": "#fff6e7",
+				"foreground": "#4eecd3",
 				"fontStyle": "italic"
 			}
 		},
@@ -815,7 +817,7 @@
 				"markup.bold"
 			],
 			"settings": {
-				"foreground": "#fff6e7",
+				"foreground": "#4eecd3",
 				"fontStyle": "bold"
 			}
 		},
@@ -868,7 +870,7 @@
 				"markup.list punctuation.definition.list.begin"
 			],
 			"settings": {
-				"foreground": "#f5cefe"
+				"foreground": "#14ebd1"
 			}
 		},
 		{
@@ -876,7 +878,7 @@
 				"markup.inserted"
 			],
 			"settings": {
-				"foreground": "#7fe3b0"
+				"foreground": "#77eb94"
 			}
 		},
 		{
@@ -884,7 +886,7 @@
 				"markup.changed"
 			],
 			"settings": {
-				"foreground": "#f5cefe"
+				"foreground": "#52b3fe"
 			}
 		},
 		{
@@ -892,7 +894,7 @@
 				"markup.deleted"
 			],
 			"settings": {
-				"foreground": "#fd636c"
+				"foreground": "#ff6362"
 			}
 		},
 		{
@@ -908,7 +910,7 @@
 				"markup.table"
 			],
 			"settings": {
-				"foreground": "#f5cefe",
+				"foreground": "#52b3fe",
 				"background": "#e9dede0f"
 			}
 		},
@@ -917,7 +919,7 @@
 				"text.html.markdown markup.inline.raw"
 			],
 			"settings": {
-				"foreground": "#fdb6af"
+				"foreground": "#e9ae5d"
 			}
 		},
 		{
@@ -941,26 +943,26 @@
 		{
 			"scope": "source.solidity punctuation.accessor",
 			"settings": {
-				"foreground": "#fca0a7"
+				"foreground": "#e9ae5d"
 			}
 		},
 		{
 			"scope": "source.solidity constant.language.currency, source.solidity storage.type.modifier.readonly",
 			"settings": {
-				"foreground": "#e6dbfd",
+				"foreground": "#c2a9f6",
 				"fontStyle": "italic"
 			}
 		},
 		{
 			"scope": "source.solidity keyword.control.exceptions",
 			"settings": {
-				"foreground": "#fd636c"
+				"foreground": "#ff6362"
 			}
 		},
 		{
 			"scope": "source.solidity keyword.control",
 			"settings": {
-				"foreground": "#fdc7ce"
+				"foreground": "#d074eb"
 			}
 		},
 		{
@@ -970,7 +972,7 @@
 				"source.solidity keyword.operator.logic"
 			],
 			"settings": {
-				"foreground": "#24c0fe"
+				"foreground": "#52b3fe"
 			}
 		},
 		{
@@ -978,7 +980,7 @@
 				"source.solidity keyword.operator.assignment"
 			],
 			"settings": {
-				"foreground": "#24c0fe"
+				"foreground": "#52b3fe"
 			}
 		},
 		{
@@ -986,26 +988,26 @@
 				"source.solidity storage.type.modifier.payable"
 			],
 			"settings": {
-				"foreground": "#f5a7f9"
+				"foreground": "#c182fd"
 			}
 		},
 		{
 			"scope": "source.solidity keyword.control.flow",
 			"settings": {
-				"foreground": "#fdc7ce",
+				"foreground": "#d074eb",
 				"fontStyle": ""
 			}
 		},
 		{
 			"scope": "source.solidity variable.parameter.function",
 			"settings": {
-				"foreground": "#b6edce"
+				"foreground": "#feafc4"
 			}
 		},
 		{
 			"scope": "source.solidity variable.parameter.other",
 			"settings": {
-				"foreground": "#bfeff2"
+				"foreground": "#ecb4d3"
 			}
 		},
 		{
@@ -1017,7 +1019,7 @@
 				"storage.type.return.natspec"
 			],
 			"settings": {
-				"foreground": "#c3a1a5"
+				"foreground": "#e6c686"
 			}
 		},
 		{
@@ -1026,7 +1028,7 @@
 				"keyword.control.for"
 			],
 			"settings": {
-				"foreground": "#feb4f7",
+				"foreground": "#9ec9fe",
 				"fontStyle": ""
 			}
 		},
@@ -1035,7 +1037,7 @@
 				"source.solidity storage.type.modifier.access"
 			],
 			"settings": {
-				"foreground": "#f1a1ce"
+				"foreground": "#d295f7"
 			}
 		},
 		{
@@ -1043,7 +1045,7 @@
 				"source.solidity storage.type.modifier.extendedscope"
 			],
 			"settings": {
-				"foreground": "#f1a1ce"
+				"foreground": "#d295f7"
 			}
 		},
 		{
@@ -1051,14 +1053,14 @@
 				"source.solidity variable.language.transaction"
 			],
 			"settings": {
-				"foreground": "#f5a7f9",
+				"foreground": "#77c566",
 				"fontStyle": ""
 			}
 		},
 		{
 			"scope": "entity.name.type.class",
 			"settings": {
-				"foreground": "#ffe6a4"
+				"foreground": "#fee87a"
 			}
 		},
 		{
@@ -1066,7 +1068,7 @@
 				"source.solidity entity.name.type.contract"
 			],
 			"settings": {
-				"foreground": "#ffe6a4"
+				"foreground": "#fee87a"
 			}
 		},
 		{
@@ -1074,7 +1076,7 @@
 				"source.solidity entity.name.type.interface"
 			],
 			"settings": {
-				"foreground": "#f5cefe"
+				"foreground": "#b5a9fd"
 			}
 		},
 		{
@@ -1082,7 +1084,7 @@
 				"source.solidity entity.name.type.library"
 			],
 			"settings": {
-				"foreground": "#faabf3"
+				"foreground": "#acff99"
 			}
 		},
 		{
@@ -1092,7 +1094,7 @@
 				"keyword.control.export"
 			],
 			"settings": {
-				"foreground": "#feb4f7"
+				"foreground": "#9ec9fe"
 			}
 		},
 		{
@@ -1100,20 +1102,20 @@
 				"keyword.control.from"
 			],
 			"settings": {
-				"foreground": "#e08bbc"
+				"foreground": "#9ec9fe"
 			}
 		},
 		{
 			"scope": "entity.other.attribute-name",
 			"settings": {
-				"foreground": "#f5cefe",
+				"foreground": "#14ebd1",
 				"fontStyle": ""
 			}
 		},
 		{
 			"scope": "keyword.operator.assignment",
 			"settings": {
-				"foreground": "#fbeeda",
+				"foreground": "#e5a403",
 				"fontStyle": ""
 			}
 		},
@@ -1122,7 +1124,7 @@
 				"meta.block keyword.operator.assignment"
 			],
 			"settings": {
-				"foreground": "#24c0fe",
+				"foreground": "#52b3fe",
 				"fontStyle": ""
 			}
 		},
@@ -1131,14 +1133,14 @@
 				"meta.tag.attributes keyword.operator.assignment"
 			],
 			"settings": {
-				"foreground": "#fe93a4",
+				"foreground": "#f0b211",
 				"fontStyle": ""
 			}
 		},
 		{
 			"scope": "storage.type.function.arrow",
 			"settings": {
-				"foreground": "#fbeeda"
+				"foreground": "#e5a403"
 			}
 		},
 		{
@@ -1150,7 +1152,7 @@
 				"meta.type.parameters storage.modifier"
 			],
 			"settings": {
-				"foreground": "#24c0fe",
+				"foreground": "#52b3fe",
 				"fontStyle": ""
 			}
 		},
@@ -1160,38 +1162,38 @@
 				"meta.block storage.type"
 			],
 			"settings": {
-				"foreground": "#18affd",
+				"foreground": "#52b3fe",
 				"fontStyle": ""
 			}
 		},
 		{
 			"scope": "support.type.builtin",
 			"settings": {
-				"foreground": "#fd636c"
+				"foreground": "#ff6362"
 			}
 		},
 		{
 			"scope": "entity.name.type, keyword.operator.expression.is, keyword.operator.expression.keyof, keyword.operator.type.annotation",
 			"settings": {
-				"foreground": "#f5cefe"
+				"foreground": "#b5a9fd"
 			}
 		},
 		{
 			"scope": "support.type",
 			"settings": {
-				"foreground": "#f5effa"
+				"foreground": "#c2a9f6"
 			}
 		},
 		{
 			"scope": "support.class",
 			"settings": {
-				"foreground": "#dcdca0"
+				"foreground": "#feb07e"
 			}
 		},
 		{
 			"scope": "storage.type.struct",
 			"settings": {
-				"foreground": "#dbc5fa"
+				"foreground": "#b5affe"
 			}
 		},
 		{
@@ -1199,7 +1201,7 @@
 				"support.constant"
 			],
 			"settings": {
-				"foreground": "#fec0b5",
+				"foreground": "#4eecd3",
 				"fontStyle": ""
 			}
 		},
@@ -1208,14 +1210,14 @@
 				"support.variable.property"
 			],
 			"settings": {
-				"foreground": "#f0c7f9",
+				"foreground": "#fe9e80",
 				"fontStyle": ""
 			}
 		},
 		{
 			"scope": "keyword.operator.new",
 			"settings": {
-				"foreground": "#85e9fd",
+				"foreground": "#52b3fe",
 				"fontStyle": ""
 			}
 		},
@@ -1227,14 +1229,14 @@
 				"meta.field.declaration meta.field.declaration meta.field.declaration meta.field.declaration meta.definition.property variable.object.property"
 			],
 			"settings": {
-				"foreground": "#ff98ca",
+				"foreground": "#6bb854",
 				"fontStyle": ""
 			}
 		},
 		{
 			"scope": "meta.objectliteral meta.object.member",
 			"settings": {
-				"foreground": "#fec0b5",
+				"foreground": "#4eecd3",
 				"fontStyle": ""
 			}
 		},
@@ -1246,14 +1248,14 @@
 				"meta.field.declaration meta.field.declaration meta.field.declaration meta.definition.property variable.object.property"
 			],
 			"settings": {
-				"foreground": "#fec0b5",
+				"foreground": "#4eecd3",
 				"fontStyle": ""
 			}
 		},
 		{
 			"scope": "meta.jsx.children meta.tag.attributes meta.embedded.expression variable.other.readwrite",
 			"settings": {
-				"foreground": "#f8dc90",
+				"foreground": "#7aefde",
 				"fontStyle": ""
 			}
 		},
@@ -1263,7 +1265,7 @@
 				"variable.other.readwrite.alias"
 			],
 			"settings": {
-				"foreground": "#fde1d7",
+				"foreground": "#fef5ec",
 				"fontStyle": ""
 			}
 		},
@@ -1272,7 +1274,7 @@
 				"source.ts entity.name.variable"
 			],
 			"settings": {
-				"foreground": "#f5eeee",
+				"foreground": "#fbd6d5",
 				"fontStyle": ""
 			}
 		},
@@ -1282,7 +1284,7 @@
 				"source.ts variable.local.readwrite, source.js variable.local.readwrite"
 			],
 			"settings": {
-				"foreground": "#dbcdcd",
+				"foreground": "#bca6ac",
 				"fontStyle": ""
 			}
 		},
@@ -1292,7 +1294,7 @@
 				"meta.embedded meta.object.member variable.other.object"
 			],
 			"settings": {
-				"foreground": "#fde1d7"
+				"foreground": "#fef5ec"
 			}
 		},
 		{
@@ -1302,7 +1304,7 @@
 				"variable.other.constant"
 			],
 			"settings": {
-				"foreground": "#feb6ed"
+				"foreground": "#fef5ec"
 			}
 		},
 		{
@@ -1311,7 +1313,7 @@
 				"support.function"
 			],
 			"settings": {
-				"foreground": "#e7816d"
+				"foreground": "#f78164"
 			}
 		},
 		{
@@ -1320,7 +1322,7 @@
 				"meta.block storage.type.function.arrow"
 			],
 			"settings": {
-				"foreground": "#fe93a4"
+				"foreground": "#ff8fa2"
 			}
 		},
 		{
@@ -1328,7 +1330,7 @@
 				"entity.name.function.member"
 			],
 			"settings": {
-				"foreground": "#feaca0"
+				"foreground": "#ff919a"
 			}
 		},
 		{
@@ -1338,7 +1340,7 @@
 				"meta.block variable.local.constant"
 			],
 			"settings": {
-				"foreground": "#c5bbba",
+				"foreground": "#bdb6b6",
 				"fontStyle": ""
 			}
 		},
@@ -1348,20 +1350,20 @@
 				"meta.block variable.other.property"
 			],
 			"settings": {
-				"foreground": "#fecfe0",
+				"foreground": "#e6c3ee",
 				"fontStyle": ""
 			}
 		},
 		{
 			"scope": "entity.name.type.enum",
 			"settings": {
-				"foreground": "#24c0fe"
+				"foreground": "#52b3fe"
 			}
 		},
 		{
 			"scope": "variable.other.enummember",
 			"settings": {
-				"foreground": "#fec0b5",
+				"foreground": "#4eecd3",
 				"fontStyle": ""
 			}
 		},
@@ -1372,7 +1374,7 @@
 				"constant.numeric.json"
 			],
 			"settings": {
-				"foreground": "#a3c5fe"
+				"foreground": "#5df7ff"
 			}
 		},
 		{
@@ -1380,19 +1382,19 @@
 				"variable.parameter.function-call"
 			],
 			"settings": {
-				"foreground": "#bfeff2"
+				"foreground": "#ecb4d3"
 			}
 		},
 		{
 			"scope": "keyword.operator.arithmetic",
 			"settings": {
-				"foreground": "#d3bdfe"
+				"foreground": "#6efafe"
 			}
 		},
 		{
 			"scope": "punctuation.accessor.optional",
 			"settings": {
-				"foreground": "#24c0fe"
+				"foreground": "#52b3fe"
 			}
 		},
 		{
@@ -1400,20 +1402,20 @@
 				"meta.parameters keyword.operator.type.annotation"
 			],
 			"settings": {
-				"foreground": "#f7b1df",
+				"foreground": "#fe9aaf",
 				"fontStyle": ""
 			}
 		},
 		{
 			"scope": "namespace, entity.name.type.module",
 			"settings": {
-				"foreground": "#faabf3"
+				"foreground": "#acff99"
 			}
 		},
 		{
 			"scope": "keyword.operator.spread",
 			"settings": {
-				"foreground": "#fec0b5"
+				"foreground": "#4eecd3"
 			}
 		},
 		{
@@ -1423,7 +1425,7 @@
 				"meta.block meta.function keyword.control.flow"
 			],
 			"settings": {
-				"foreground": "#f1a1ce"
+				"foreground": "#d295f7"
 			}
 		},
 		{
@@ -1434,37 +1436,37 @@
 				"meta.block meta.function meta.function keyword.control.flow"
 			],
 			"settings": {
-				"foreground": "#e1acc4"
+				"foreground": "#d4c2fe"
 			}
 		},
 		{
 			"scope": "keyword.operator.increment",
 			"settings": {
-				"foreground": "#d3bdfe"
+				"foreground": "#6efafe"
 			}
 		},
 		{
 			"scope": "keyword.control.conditional, keyword.operator.ternary, keyword.control.switch, keyword.operator.expression.typeof, keyword.control.loop, keyword.operator.expression.of, keyword.operator.increment",
 			"settings": {
-				"foreground": "#24c0fe"
+				"foreground": "#52b3fe"
 			}
 		},
 		{
 			"scope": "keyword.operator.comparison, keyword.operator.logical, keyword.operator.relational",
 			"settings": {
-				"foreground": "#24c0fe"
+				"foreground": "#52b3fe"
 			}
 		},
 		{
 			"scope": "variable.other.constant.property",
 			"settings": {
-				"foreground": "#fec0b5"
+				"foreground": "#4eecd3"
 			}
 		},
 		{
 			"scope": "meta.embedded.expression variable.other.object",
 			"settings": {
-				"foreground": "#ffe9e2"
+				"foreground": "#fef5ec"
 			}
 		},
 		{
@@ -1473,7 +1475,7 @@
 				"meta.jsx string"
 			],
 			"settings": {
-				"foreground": "#cec0fd"
+				"foreground": "#65ee40"
 			}
 		},
 		{
@@ -1481,19 +1483,20 @@
 				"string"
 			],
 			"settings": {
-				"foreground": "#cec0fd"
+				"foreground": "#65ee40"
 			}
 		},
 		{
 			"scope": "meta.parameters variable.other.readwrite",
 			"settings": {
-				"foreground": "#fec0b5"
+				"foreground": "#feafc4",
+				"fontStyle": "italic"
 			}
 		},
 		{
 			"scope": "meta.var.expr variable.other.property",
 			"settings": {
-				"foreground": "#fecfe0"
+				"foreground": "#e6c3ee"
 			}
 		},
 		{
@@ -1502,7 +1505,7 @@
 				"punctuation.definition.template-expression.end"
 			],
 			"settings": {
-				"foreground": "#fe93a4"
+				"foreground": "#b197fe"
 			}
 		},
 		{
@@ -1511,7 +1514,7 @@
 				"punctuation.definition.string.template.begin"
 			],
 			"settings": {
-				"foreground": "#e3d7fd",
+				"foreground": "#d9ff95",
 				"fontStyle": ""
 			}
 		},
@@ -1520,7 +1523,7 @@
 				"entity.name.tag support.class.component"
 			],
 			"settings": {
-				"foreground": "#ffe6a4"
+				"foreground": "#b6f7fe"
 			}
 		},
 		{
@@ -1528,7 +1531,7 @@
 				"meta.tag entity.name.tag"
 			],
 			"settings": {
-				"foreground": "#fe82b6"
+				"foreground": "#ad98eb"
 			}
 		},
 		{
@@ -1537,7 +1540,7 @@
 				"meta.block meta.tag.without-attributes punctuation.definition.tag.end"
 			],
 			"settings": {
-				"foreground": "#a08489"
+				"foreground": "#7fd1d5"
 			}
 		},
 		{
@@ -1549,7 +1552,7 @@
 		{
 			"scope": "keyword.operator.expression.in",
 			"settings": {
-				"foreground": "#24c0fe"
+				"foreground": "#52b3fe"
 			}
 		},
 		{
@@ -1558,7 +1561,7 @@
 				"punctuation.definition.tag.end"
 			],
 			"settings": {
-				"foreground": "#a08489",
+				"foreground": "#7fd1d5",
 				"fontStyle": ""
 			}
 		},
@@ -1568,7 +1571,7 @@
 				"meta.objectliteral punctuation.separator.comma"
 			],
 			"settings": {
-				"foreground": "#fec0b5",
+				"foreground": "#4eecd3",
 				"fontStyle": ""
 			}
 		},
@@ -1577,7 +1580,7 @@
 				"meta.object.member punctuation.accessor"
 			],
 			"settings": {
-				"foreground": "#ceaaca",
+				"foreground": "#b1bded",
 				"fontStyle": ""
 			}
 		},
@@ -1586,7 +1589,7 @@
 				"meta.block punctuation.accessor"
 			],
 			"settings": {
-				"foreground": "#bfb4b4",
+				"foreground": "#c5d2f1",
 				"fontStyle": ""
 			}
 		},
@@ -1597,7 +1600,7 @@
 				"keyword.operator.rest"
 			],
 			"settings": {
-				"foreground": "#f3bee6",
+				"foreground": "#bfbeff",
 				"fontStyle": ""
 			}
 		},
@@ -1606,7 +1609,7 @@
 				"keyword.operator.rest"
 			],
 			"settings": {
-				"foreground": "#f5cefe",
+				"foreground": "#14ebd1",
 				"fontStyle": ""
 			}
 		},
@@ -1615,14 +1618,14 @@
 				"storage.modifier.async"
 			],
 			"settings": {
-				"foreground": "#f5a7f9",
+				"foreground": "#c182fd",
 				"fontStyle": ""
 			}
 		},
 		{
 			"scope": "meta.object.member meta.object-literal.key string",
 			"settings": {
-				"foreground": "#fec0b5",
+				"foreground": "#4eecd3",
 				"fontStyle": ""
 			}
 		},
@@ -1633,31 +1636,31 @@
 				"constant.language.boolean.false"
 			],
 			"settings": {
-				"foreground": "#fd636c"
+				"foreground": "#ff6362"
 			}
 		},
 		{
 			"scope": "keyword.control.flow",
 			"settings": {
-				"foreground": "#fdc7ce"
+				"foreground": "#d074eb"
 			}
 		},
 		{
 			"scope": "keyword.control, keyword.control.trycatch",
 			"settings": {
-				"foreground": "#fdc7ce"
+				"foreground": "#d074eb"
 			}
 		},
 		{
 			"scope": "text.html.markdown.journal.task.open.bullet",
 			"settings": {
-				"foreground": "#fec0b5"
+				"foreground": "#fee87a"
 			}
 		},
 		{
 			"scope": "text.html.markdown.journal.task.open.marker",
 			"settings": {
-				"foreground": "#fec0b5"
+				"foreground": "#fee87a"
 			}
 		},
 		{
@@ -1691,7 +1694,7 @@
 		{
 			"scope": "text.html.markdown.journal.task.completed.bullet",
 			"settings": {
-				"foreground": "#fec0b5"
+				"foreground": "#fee87a"
 			}
 		},
 		{
@@ -1703,13 +1706,13 @@
 		{
 			"scope": "text.html.markdown.journal.memo.bullet",
 			"settings": {
-				"foreground": "#fec0b5"
+				"foreground": "#fee87a"
 			}
 		},
 		{
 			"scope": "text.html.markdown.journal.scope",
 			"settings": {
-				"foreground": "#fec0b5"
+				"foreground": "#fee87a"
 			}
 		},
 		{
@@ -1721,7 +1724,7 @@
 		{
 			"scope": "text.html.markdown.journal.link.bullet",
 			"settings": {
-				"foreground": "#fec0b5"
+				"foreground": "#fee87a"
 			}
 		},
 		{
@@ -1751,7 +1754,7 @@
 		{
 			"scope": "token.debug-token",
 			"settings": {
-				"foreground": "#f5a7f9"
+				"foreground": "#7bd1ba"
 			}
 		}
 	]

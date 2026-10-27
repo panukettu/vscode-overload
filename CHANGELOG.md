@@ -15,6 +15,13 @@ All notable changes to the "overload" extension will be documented in this file.
 - Use native `workbench.activityBar.location` for bottom activity bar
 - Document optional UI tweaks / vibrancy via Custom UI Style
 
+## [Unreleased]
+
+- Generated palettes now follow the original overload palette system: every syntax color is derived from a family hue with the lightness / chroma steps of the original theme (declaration keywords, control-flow exits and branching each get their own hue; function names, calls, methods, library functions and parameters share one hue; strings no longer share the function hue)
+- Generated palettes: parameters are italic, declarations keep the same hue as their usages
+- Generated palettes: blue / violet families are lowered in lightness so they keep their chroma instead of washing out to white
+- `npm run audit` now checks syntax areas that must read apart and families that must read together, against the original overload hues
+
 ## [1.3.0]
 
 - Add `ember`, `graphite`, `violet`, `pink`, `blush`, `fuchsia`, `abyss`, `solar`, `ocean`, `primer` and `geist` variants (regular + borderless), generated from OKLCH palettes in `scripts/build-themes.mjs`
