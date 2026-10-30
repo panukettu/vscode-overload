@@ -36,3 +36,7 @@ All notable changes to the "overload" extension will be documented in this file.
 ## [1.4.0]
 
 - Generated palettes: shell variables and expansions (`$name`, `${name:-default}`, `$1`, `$(cmd)`) are colored as interpolation instead of blending into strings: `$` / `${ }` / `$( )` and expansion operators use the template-expression color, variable names the plain-variable tint, positional parameters the italic parameter color
+
+## [1.4.1]
+
+- Add MIT license (required to publish on Open VSX)
