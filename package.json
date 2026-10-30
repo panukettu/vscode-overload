@@ -233,7 +233,11 @@
   "scripts": {
     "build": "node scripts/build-themes.mjs",
     "package": "vsce package",
-    "audit": "node scripts/audit-themes.mjs"
+    "audit": "node scripts/audit-themes.mjs",
+    "publish:vsce": "vsce publish --packagePath overload-$npm_package_version.vsix",
+    "publish:ovsx": "npx --yes ovsx publish overload-$npm_package_version.vsix",
+    "release:build": "npm run build && npm run audit && npm run package",
+    "release:publish": "npm run publish:vsce && npm run publish:ovsx"
   },
   "repository": {
     "type": "git",
