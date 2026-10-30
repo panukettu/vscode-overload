@@ -15,7 +15,7 @@ All notable changes to the "overload" extension will be documented in this file.
 - Use native `workbench.activityBar.location` for bottom activity bar
 - Document optional UI tweaks / vibrancy via Custom UI Style
 
-## [Unreleased]
+## [1.3.1]
 
 - Generated palettes now follow the original overload palette system: every syntax color is derived from a family hue with the lightness / chroma steps of the original theme (declaration keywords, control-flow exits and branching each get their own hue; function names, calls, methods, library functions and parameters share one hue; strings no longer share the function hue)
 - Generated palettes: parameters are italic, declarations keep the same hue as their usages
@@ -32,3 +32,7 @@ All notable changes to the "overload" extension will be documented in this file.
 - All themes: colors for UI that was still falling back to VS Code defaults (activity bar in top/bottom position, command center, menus, notifications, inlay hints, ghost text, bracket pair colors, sticky scroll, fold and gutter controls, status bar error/warning items, terminal cursor/selection, multi-diff editor, problems icons)
 - Vibrancy: opaque sticky scroll background so it no longer overlaps code
 - Settings: `editor.defaultColorDecorators` is now `"auto"` (the old `true` is no longer a valid value), drop a no-op tab height default, require VS Code 1.90+
+
+## [1.4.0]
+
+- Generated palettes: shell variables and expansions (`$name`, `${name:-default}`, `$1`, `$(cmd)`) are colored as interpolation instead of blending into strings: `$` / `${ }` / `$( )` and expansion operators use the template-expression color, variable names the plain-variable tint, positional parameters the italic parameter color
