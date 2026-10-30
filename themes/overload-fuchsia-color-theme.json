@@ -1652,6 +1652,46 @@
 			}
 		},
 		{
+			"scope": [
+				"source.shell variable.other.normal",
+				"source.shell meta.parameter-expansion"
+			],
+			"settings": {
+				"foreground": "#cde3fc",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": [
+				"source.shell variable.parameter.positional"
+			],
+			"settings": {
+				"foreground": "#eecffe",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"scope": [
+				"source.shell punctuation.definition.variable",
+				"source.shell punctuation.definition.variable variable.other.normal",
+				"source.shell punctuation.definition.variable variable.parameter.positional",
+				"source.shell punctuation.definition.subshell",
+				"source.shell keyword.operator.expansion"
+			],
+			"settings": {
+				"foreground": "#fe6fc5",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": [
+				"source.shell string meta.scope.subshell"
+			],
+			"settings": {
+				"foreground": "#dfe1e5"
+			}
+		},
+		{
 			"scope": "text.html.markdown.journal.task.open.bullet",
 			"settings": {
 				"foreground": "#fedf64"
