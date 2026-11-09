@@ -37,6 +37,12 @@ All notable changes to the "overload" extension will be documented in this file.
 
 - Generated palettes: shell variables and expansions (`$name`, `${name:-default}`, `$1`, `$(cmd)`) are colored as interpolation instead of blending into strings: `$` / `${ }` / `$( )` and expansion operators use the template-expression color, variable names the plain-variable tint, positional parameters the italic parameter color
 
+## [1.4.2]
+
+- Generated palettes: shell expansions inside `"..."`, herestrings and subshells outrank the generic string colour (`$name`, `${name:-x}`, `$1`)
+- Generated palettes: `${}` braces, bare arguments and `--options` get their own tints; expansion operators (`:-`, `##`, …) separate from the `$` sigil
+- Generated palettes: awk / jq / sed / JMESPath programs embedded by sh-inline-syntax keep keyword / field / regexp colours after the shell string scope is replaced
+
 ## [1.4.1]
 
 - Add MIT license (required to publish on Open VSX)

@@ -1653,8 +1653,11 @@
 		},
 		{
 			"scope": [
-				"source.shell variable.other.normal",
-				"source.shell meta.parameter-expansion"
+				"source.shell string.quoted variable.other.normal",
+				"source.shell meta.herestring variable.other.normal",
+				"source.shell meta.scope.subshell variable.other.normal",
+				"source.shell meta.parameter-expansion variable.other.normal",
+				"source.shell variable.other.normal"
 			],
 			"settings": {
 				"foreground": "#cde3fc",
@@ -1663,6 +1666,8 @@
 		},
 		{
 			"scope": [
+				"source.shell string.quoted variable.parameter.positional",
+				"source.shell meta.herestring variable.parameter.positional",
 				"source.shell variable.parameter.positional"
 			],
 			"settings": {
@@ -1672,14 +1677,25 @@
 		},
 		{
 			"scope": [
+				"source.shell string.quoted punctuation.definition.variable",
+				"source.shell meta.herestring punctuation.definition.variable",
 				"source.shell punctuation.definition.variable",
 				"source.shell punctuation.definition.variable variable.other.normal",
 				"source.shell punctuation.definition.variable variable.parameter.positional",
-				"source.shell punctuation.definition.subshell",
-				"source.shell keyword.operator.expansion"
+				"source.shell punctuation.section.bracket.curly.variable",
+				"source.shell punctuation.definition.subshell"
 			],
 			"settings": {
 				"foreground": "#fe6fc5",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": [
+				"source.shell keyword.operator.expansion"
+			],
+			"settings": {
+				"foreground": "#8ab5fe",
 				"fontStyle": ""
 			}
 		},
@@ -1689,6 +1705,76 @@
 			],
 			"settings": {
 				"foreground": "#dfe1e5"
+			}
+		},
+		{
+			"scope": [
+				"source.shell string.unquoted.argument"
+			],
+			"settings": {
+				"foreground": "#a8d8fb",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": [
+				"source.shell constant.other.option"
+			],
+			"settings": {
+				"foreground": "#feb26f",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": [
+				"meta.embedded.block.awk keyword.other.command",
+				"source.awk keyword.other.command",
+				"meta.embedded.block.jq support.function",
+				"source.jq support.function",
+				"meta.embedded.block.jmespath support.function",
+				"source.jmespath support.function.builtin",
+				"meta.embedded.block.sed keyword.control.command",
+				"source.sed keyword.control.command"
+			],
+			"settings": {
+				"foreground": "#f3aaff",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": [
+				"meta.embedded.block.awk variable.language",
+				"source.awk variable.language",
+				"meta.embedded.block.jmespath variable.language",
+				"source.jmespath variable.language"
+			],
+			"settings": {
+				"foreground": "#20c4b7",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"scope": [
+				"meta.embedded.block.awk string.regexp",
+				"source.awk string.regexp",
+				"meta.embedded.block.sed string.regexp",
+				"source.sed string.regexp"
+			],
+			"settings": {
+				"foreground": "#73bade",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": [
+				"meta.embedded.block.jq property",
+				"source.jq property",
+				"meta.embedded.block.jmespath variable.other.property",
+				"source.jmespath variable.other.property"
+			],
+			"settings": {
+				"foreground": "#a8d8fb",
+				"fontStyle": ""
 			}
 		},
 		{
