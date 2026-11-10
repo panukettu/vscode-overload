@@ -58,86 +58,86 @@ _settings.json_
 
 ```json
 {
-	"custom-ui-style.font.sansSerif": "Roboto Mono",
-	"custom-ui-style.font.monospace": "Ubuntu Mono",
-	"custom-ui-style.stylesheet": {
-		".sidebar.right > .composite.title": {
-			"position": "absolute"
-		},
-		".tabs-and-actions-container > .inline-tabs-placeholder": {
-			"position": "absolute"
-		},
-		".monaco-scrollable-element.modified-in-monaco-diff-editor.vs": {
-			"display": "none"
-		},
-		".monaco-editor .insert-sign": {
-			"color": "#81ff89",
-			"opacity": "1 !important",
-			"font-weight": "700",
-			"margin-left": "3px"
-		},
-		".monaco-editor .delete-sign": {
-			"color": "red",
-			"opacity": "1 !important",
-			"font-weight": "bold"
-		},
-		".monaco-breadcrumbs": {
-			"font-size": "11px",
-			"letter-spacing": "0.2px",
-			"font-family": "'Roboto Mono'",
-			"font-weight": "400"
-		},
-		".breadcrumbs-below-tabs": {
-			"display": "flex",
-			"height": "27px",
-			"align-items": "center",
-			"justify-content": "center"
-		},
-		".monaco-breadcrumb-item + .outline-element:has(.outline-element-label) > *": {
-			"position": "absolute",
-			"right": "15px",
-			"color": "#12ff89 !important"
-		},
-		".monaco-breadcrumb-item + .outline-element:has(.outline-element-label) > .codicon": {
-			"display": "none"
-		},
-		".monaco-breadcrumb-item:has([class*='-file']) > :first-of-type": {
-			"color": "#98ff7c !important"
-		},
-		".monaco-breadcrumb-item:not(:has([class*='-file'])) > .codicon:last-child:before": {
-			"display": "flex",
-			"align-items": "flex-start",
-			"justify-items": "flex-start",
-			"content": "'/'",
-			"margin": "0 1px 0 1px",
-			"font-size": "16px",
-			"height": "18px",
-			"color": "#95aeb4"
-		},
-		".monaco-breadcrumb-item:has(.codicon[class*='codicon-symbol'])": {
-			"color": "#A1F4AD !important"
-		},
-		".monaco-breadcrumb-item:has(.codicon[class*='codicon-symbol']):last-of-type": {
-			"color": "#FFFFC6 !important"
-		},
-		".monaco-breadcrumb-item:has(.codicon[class*='codicon-symbol']):before": {
-			"margin": "0 9px 0 9px",
-			"min-width": "20px",
-			"margin-top": "1.5px",
-			"height": "25px !important",
-			"display": "flex",
-			"align-items": "flex-start",
-			"content": "'⇢'",
-			"font-size": "17px",
-			"color": "#CBff7b !important"
-		},
-		".monaco-breadcrumb-item:has([class*='codicon-symbol']) > .codicon:last-child:before": {
-			"content": "''"
-		},
-		".monaco-breadcrumb-item:has([class*='-file']) .codicon:last-child:before": {
-			"content": "' '"
-		}
-	}
+  "custom-ui-style.font.sansSerif": "Roboto Mono",
+  "custom-ui-style.font.monospace": "Ubuntu Mono",
+  "custom-ui-style.stylesheet": {
+    ".sidebar.right > .composite.title": {
+      "position": "absolute"
+    },
+    ".tabs-and-actions-container > .inline-tabs-placeholder": {
+      "position": "absolute"
+    },
+    ".monaco-scrollable-element.modified-in-monaco-diff-editor.vs": {
+      "display": "none"
+    },
+    ".monaco-editor .insert-sign": {
+      "color": "#81ff89",
+      "opacity": "1 !important",
+      "font-weight": "700",
+      "margin-left": "3px"
+    },
+    ".monaco-editor .delete-sign": {
+      "color": "red",
+      "opacity": "1 !important",
+      "font-weight": "bold"
+    },
+    ".monaco-breadcrumbs": {
+      "font-size": "11px",
+      "letter-spacing": "0.2px",
+      "font-family": "'Roboto Mono'",
+      "font-weight": "400"
+    },
+    ".breadcrumbs-below-tabs": {
+      "display": "flex",
+      "height": "27px",
+      "align-items": "center",
+      "justify-content": "center"
+    },
+    ".monaco-breadcrumb-item + .outline-element:has(.outline-element-label) > *": {
+      "position": "absolute",
+      "right": "15px",
+      "color": "#12ff89 !important"
+    },
+    ".monaco-breadcrumb-item + .outline-element:has(.outline-element-label) > .codicon": {
+      "display": "none"
+    },
+    ".monaco-breadcrumb-item:has([class*='-file']) > :first-of-type": {
+      "color": "#98ff7c !important"
+    },
+    ".monaco-breadcrumb-item:not(:has([class*='-file'])) > .codicon:last-child:before": {
+      "display": "flex",
+      "align-items": "flex-start",
+      "justify-items": "flex-start",
+      "content": "'/'",
+      "margin": "0 1px 0 1px",
+      "font-size": "16px",
+      "height": "18px",
+      "color": "#95aeb4"
+    },
+    ".monaco-breadcrumb-item:has(.codicon[class*='codicon-symbol'])": {
+      "color": "#A1F4AD !important"
+    },
+    ".monaco-breadcrumb-item:has(.codicon[class*='codicon-symbol']):last-of-type": {
+      "color": "#FFFFC6 !important"
+    },
+    ".monaco-breadcrumb-item:has(.codicon[class*='codicon-symbol']):before": {
+      "margin": "0 9px 0 9px",
+      "min-width": "20px",
+      "margin-top": "1.5px",
+      "height": "25px !important",
+      "display": "flex",
+      "align-items": "flex-start",
+      "content": "'⇢'",
+      "font-size": "17px",
+      "color": "#CBff7b !important"
+    },
+    ".monaco-breadcrumb-item:has([class*='codicon-symbol']) > .codicon:last-child:before": {
+      "content": "''"
+    },
+    ".monaco-breadcrumb-item:has([class*='-file']) .codicon:last-child:before": {
+      "content": "' '"
+    }
+  }
 }
 ```
 
@@ -147,13 +147,13 @@ The `overload vibrancy` themes use translucent backgrounds, so they only look ri
 
 ```json
 {
-	"custom-ui-style.electron": {
-		"opacity": 0.97,
-		"frame": false,
-		"transparent": true,
-		"vibrancy": "hud",
-		"visualEffectState": "active"
-	}
+  "custom-ui-style.electron": {
+    "opacity": 0.97,
+    "frame": false,
+    "transparent": true,
+    "vibrancy": "hud",
+    "visualEffectState": "active"
+  }
 }
 ```
 

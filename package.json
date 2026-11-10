@@ -1,20 +1,31 @@
 {
   "name": "overload",
   "displayName": "overload",
-  "description": "A vibrant theme in a dozen palettes, works best with Solidity / TypeScript.",
   "version": "1.4.2",
-  "license": "MIT",
-  "publisher": "0xp",
-  "engines": {
-    "vscode": "^1.90.0"
-  },
-  "icon": "assets/icon_512.png",
+  "description": "A vibrant theme in a dozen palettes, works best with Solidity / TypeScript.",
   "categories": [
     "Themes"
   ],
-  "galleryBanner": {
-    "color": "#0a0c10",
-    "theme": "dark"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/panukettu/vscode-overload.git"
+  },
+  "publisher": "0xp",
+  "scripts": {
+    "build": "bun scripts/build-themes.mjs",
+    "fmt": "oxfmt --disable-nested-config --write",
+    "lint": "oxlint --disable-nested-config",
+    "package": "vsce package",
+    "audit": "bun scripts/audit-themes.mjs",
+    "publish:vsce": "vsce publish --packagePath overload-$npm_package_version.vsix",
+    "publish:ovsx": "bunx ovsx publish overload-$npm_package_version.vsix",
+    "release:build": "bun run build && bun run audit && bun run package",
+    "release:publish": "bun run publish:vsce && bun run publish:ovsx"
+  },
+  "devDependencies": {
+    "oxfmt": "^0.75.0",
+    "oxlint": "^1.90.0"
   },
   "contributes": {
     "themes": [
@@ -230,20 +241,15 @@
       "workbench.activityBar.location": "bottom"
     }
   },
-  "scripts": {
-    "build": "node scripts/build-themes.mjs",
-    "package": "vsce package",
-    "audit": "node scripts/audit-themes.mjs",
-    "publish:vsce": "vsce publish --packagePath overload-$npm_package_version.vsix",
-    "publish:ovsx": "npx --yes ovsx publish overload-$npm_package_version.vsix",
-    "release:build": "npm run build && npm run audit && npm run package",
-    "release:publish": "npm run publish:vsce && npm run publish:ovsx"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/panukettu/vscode-overload.git"
-  },
   "extensionDependencies": [
     "PKief.material-icon-theme"
-  ]
+  ],
+  "icon": "assets/icon_512.png",
+  "galleryBanner": {
+    "color": "#0a0c10",
+    "theme": "dark"
+  },
+  "engines": {
+    "vscode": "^1.90.0"
+  }
 }
